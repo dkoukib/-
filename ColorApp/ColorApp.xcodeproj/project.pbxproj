@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		04F6C4F7217C86320039FA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C4F6217C86320039FA80 /* AppDelegate.swift */; };
-		04F6C4F9217C86320039FA80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C4F8217C86320039FA80 /* ViewController.swift */; };
-		04F6C4FC217C86320039FA80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4FA217C86320039FA80 /* Main.storyboard */; };
 		04F6C4FE217C86340039FA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4FD217C86340039FA80 /* Assets.xcassets */; };
 		04F6C501217C86340039FA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4FF217C86340039FA80 /* LaunchScreen.storyboard */; };
+		178954D1217C8D6B00F3591B /* PickerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178954D0217C8D6B00F3591B /* PickerContract.swift */; };
+		178954D3217C8D8A00F3591B /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178954D2217C8D8A00F3591B /* PickerModel.swift */; };
+		178954D5217C8DA200F3591B /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178954D4217C8DA200F3591B /* PickerPresenter.swift */; };
+		178954D7217C8DD600F3591B /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178954D6217C8DD600F3591B /* PickerViewController.swift */; };
+		178954D9217C8E4900F3591B /* PickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178954D8217C8E4900F3591B /* PickerViewController.storyboard */; };
+		178954DD217C90D800F3591B /* UiViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178954DC217C90D800F3591B /* UiViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04F6C4F3217C86320039FA80 /* ColorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6C4F6217C86320039FA80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04F6C4F8217C86320039FA80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04F6C4FB217C86320039FA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F6C4FD217C86340039FA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F6C500217C86340039FA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F6C502217C86340039FA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		178954D0217C8D6B00F3591B /* PickerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContract.swift; sourceTree = "<group>"; };
+		178954D2217C8D8A00F3591B /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
+		178954D4217C8DA200F3591B /* PickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPresenter.swift; sourceTree = "<group>"; };
+		178954D6217C8DD600F3591B /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		178954D8217C8E4900F3591B /* PickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
+		178954DC217C90D800F3591B /* UiViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,114 @@
 		04F6C4F5217C86320039FA80 /* ColorApp */ = {
 			isa = PBXGroup;
 			children = (
+				178954DB217C909800F3591B /* Extension */,
 				04F6C4F6217C86320039FA80 /* AppDelegate.swift */,
-				04F6C4F8217C86320039FA80 /* ViewController.swift */,
-				04F6C4FA217C86320039FA80 /* Main.storyboard */,
+				178954C5217C8C1C00F3591B /* Module */,
 				04F6C4FD217C86340039FA80 /* Assets.xcassets */,
 				04F6C4FF217C86340039FA80 /* LaunchScreen.storyboard */,
 				04F6C502217C86340039FA80 /* Info.plist */,
 			);
 			path = ColorApp;
+			sourceTree = "<group>";
+		};
+		178954C5217C8C1C00F3591B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				178954C7217C8C5700F3591B /* History */,
+				178954C6217C8C3D00F3591B /* Picker */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		178954C6217C8C3D00F3591B /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				178954CB217C8CD400F3591B /* View */,
+				178954CA217C8CC600F3591B /* Presenter */,
+				178954C9217C8CB400F3591B /* Model */,
+				178954C8217C8C7C00F3591B /* Contract */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		178954C7217C8C5700F3591B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				178954CF217C8D1C00F3591B /* Contract */,
+				178954CE217C8D1100F3591B /* Model */,
+				178954CD217C8D0900F3591B /* Presenter */,
+				178954CC217C8D0200F3591B /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		178954C8217C8C7C00F3591B /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				178954D0217C8D6B00F3591B /* PickerContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		178954C9217C8CB400F3591B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				178954D2217C8D8A00F3591B /* PickerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		178954CA217C8CC600F3591B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				178954D4217C8DA200F3591B /* PickerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		178954CB217C8CD400F3591B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				178954D6217C8DD600F3591B /* PickerViewController.swift */,
+				178954D8217C8E4900F3591B /* PickerViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		178954CC217C8D0200F3591B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		178954CD217C8D0900F3591B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		178954CE217C8D1100F3591B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		178954CF217C8D1C00F3591B /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		178954DB217C909800F3591B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				178954DC217C90D800F3591B /* UiViewController+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178954D9217C8E4900F3591B /* PickerViewController.storyboard in Resources */,
 				04F6C501217C86340039FA80 /* LaunchScreen.storyboard in Resources */,
 				04F6C4FE217C86340039FA80 /* Assets.xcassets in Resources */,
-				04F6C4FC217C86320039FA80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +243,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F6C4F9217C86320039FA80 /* ViewController.swift in Sources */,
+				178954DD217C90D800F3591B /* UiViewController+.swift in Sources */,
+				178954D7217C8DD600F3591B /* PickerViewController.swift in Sources */,
+				178954D3217C8D8A00F3591B /* PickerModel.swift in Sources */,
 				04F6C4F7217C86320039FA80 /* AppDelegate.swift in Sources */,
+				178954D5217C8DA200F3591B /* PickerPresenter.swift in Sources */,
+				178954D1217C8D6B00F3591B /* PickerContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04F6C4FA217C86320039FA80 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04F6C4FB217C86320039FA80 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04F6C4FF217C86340039FA80 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

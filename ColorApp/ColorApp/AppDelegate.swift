@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        //機種によるの画面生成
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = PickerViewController.instans()
+        self.window?.makeKeyAndVisible()
         return true
     }
 
