@@ -27,7 +27,7 @@
 		178954D0217C8D6B00F3591B /* PickerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContract.swift; sourceTree = "<group>"; };
 		178954D2217C8D8A00F3591B /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
 		178954D4217C8DA200F3591B /* PickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPresenter.swift; sourceTree = "<group>"; };
-		178954D6217C8DD600F3591B /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		178954D6217C8DD600F3591B /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		178954D8217C8E4900F3591B /* PickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
 		178954DC217C90D800F3591B /* UiViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
