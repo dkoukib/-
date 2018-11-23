@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+final class PickerPresentor: PickerPresentation {
+    
+    weak var view: PickerViewInterface?
+    
+    var model: PickerInteractor!
+}

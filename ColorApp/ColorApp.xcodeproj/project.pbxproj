@@ -10,6 +10,7 @@
 		04F6C4F7217C86320039FA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C4F6217C86320039FA80 /* AppDelegate.swift */; };
 		04F6C4FE217C86340039FA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4FD217C86340039FA80 /* Assets.xcassets */; };
 		04F6C501217C86340039FA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4FF217C86340039FA80 /* LaunchScreen.storyboard */; };
+		173403B021A7CB31003C2657 /* PickerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173403AF21A7CB31003C2657 /* PickerBuilder.swift */; };
 		178954D1217C8D6B00F3591B /* PickerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178954D0217C8D6B00F3591B /* PickerContract.swift */; };
 		178954D3217C8D8A00F3591B /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178954D2217C8D8A00F3591B /* PickerModel.swift */; };
 		178954D5217C8DA200F3591B /* PickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178954D4217C8DA200F3591B /* PickerPresenter.swift */; };
@@ -24,6 +25,7 @@
 		04F6C4FD217C86340039FA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F6C500217C86340039FA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F6C502217C86340039FA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		173403AF21A7CB31003C2657 /* PickerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBuilder.swift; sourceTree = "<group>"; };
 		178954D0217C8D6B00F3591B /* PickerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContract.swift; sourceTree = "<group>"; };
 		178954D2217C8D8A00F3591B /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
 		178954D4217C8DA200F3591B /* PickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPresenter.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 			path = ColorApp;
 			sourceTree = "<group>";
 		};
+		173403AE21A7CB00003C2657 /* Billder */ = {
+			isa = PBXGroup;
+			children = (
+				173403AF21A7CB31003C2657 /* PickerBuilder.swift */,
+			);
+			path = Billder;
+			sourceTree = "<group>";
+		};
 		178954C5217C8C1C00F3591B /* Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		178954C6217C8C3D00F3591B /* Picker */ = {
 			isa = PBXGroup;
 			children = (
+				173403AE21A7CB00003C2657 /* Billder */,
 				178954CB217C8CD400F3591B /* View */,
 				178954CA217C8CC600F3591B /* Presenter */,
 				178954C9217C8CB400F3591B /* Model */,
@@ -244,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				178954DD217C90D800F3591B /* UiViewController+.swift in Sources */,
+				173403B021A7CB31003C2657 /* PickerBuilder.swift in Sources */,
 				178954D7217C8DD600F3591B /* PickerViewController.swift in Sources */,
 				178954D3217C8D8A00F3591B /* PickerModel.swift in Sources */,
 				04F6C4F7217C86320039FA80 /* AppDelegate.swift in Sources */,

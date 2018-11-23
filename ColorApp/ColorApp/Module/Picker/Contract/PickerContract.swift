@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+protocol PickerViewInterface: class {
+    
+    var presenter: PickerPresentation! { get set }
+}
+
+protocol PickerPresentation: class {
+    
+    var view: PickerViewInterface? { get set }
+    var model: PickerInteractor! { get set }
+}
+
+protocol PickerInteractor: class {
+    
+}

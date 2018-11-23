@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //機種によるの画面生成
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = PickerViewController.instans()
+        self.window?.rootViewController = PickerBuilder.build()
         self.window?.makeKeyAndVisible()
         return true
     }

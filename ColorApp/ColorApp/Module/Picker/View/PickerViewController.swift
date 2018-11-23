@@ -8,7 +8,9 @@
 
 import UIKit
 
-final class PickerViewController: UIViewController {
+final class PickerViewController: UIViewController, PickerViewInterface {
+    
+    var presenter: PickerPresentation!
     
     @IBOutlet private weak var colorView: UIView!
 
