@@ -12,13 +12,13 @@ final class PickerViewController: UIViewController {
     
     @IBOutlet private weak var colorView: UIView!
 
-    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet private weak var redSlider: UISlider!
 
-    @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet private weak var blueSlider: UISlider!
     
-    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet private weak var greenSlider: UISlider!
     
-    @IBOutlet weak var alphaSlider: UISlider!
+    @IBOutlet private weak var alphaSlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,11 @@ final class PickerViewController: UIViewController {
 
     @IBAction private func didChangeSlider(_ sender: Any) {
         self.changeColorView()
+    }
+    
+    @IBAction private func didTapSaveButton(_ sender: Any) {
+        
+        
     }
     
     private func changeColorView() {

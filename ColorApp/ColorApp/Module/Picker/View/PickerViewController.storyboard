@@ -113,10 +113,24 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hr-WC-hQw">
+                                <rect key="frame" x="155.5" y="459" width="64" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VCK-ix-tFq"/>
+                                    <constraint firstAttribute="width" constant="64" id="z2j-5R-zUD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="didTapSaveButton:" destination="XMr-4w-V3C" eventType="touchUpInside" id="jAn-0Y-pib"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5Hr-WC-hQw" firstAttribute="centerX" secondItem="gOD-zK-B6p" secondAttribute="centerX" id="3MU-0O-RWr"/>
                             <constraint firstItem="ml1-Aa-Y8p" firstAttribute="leading" secondItem="gOD-zK-B6p" secondAttribute="leading" constant="10" id="Qs6-tz-OSn"/>
+                            <constraint firstItem="5Hr-WC-hQw" firstAttribute="top" secondItem="ml1-Aa-Y8p" secondAttribute="bottom" constant="60" id="TOD-WN-D9A"/>
                             <constraint firstAttribute="trailing" secondItem="ml1-Aa-Y8p" secondAttribute="trailing" constant="10" id="cgy-5i-fDs"/>
                             <constraint firstItem="ml1-Aa-Y8p" firstAttribute="top" secondItem="7BK-Xe-yfx" secondAttribute="bottom" constant="30" id="crX-4P-bLZ"/>
                             <constraint firstItem="7BK-Xe-yfx" firstAttribute="top" secondItem="gOD-zK-B6p" secondAttribute="top" id="oSp-fd-DtD"/>
