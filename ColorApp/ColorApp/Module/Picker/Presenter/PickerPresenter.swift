@@ -13,4 +13,11 @@ final class PickerPresentor: PickerPresentation {
     weak var view: PickerViewInterface?
     
     var model: PickerInteractor!
+    
+    func willSaveColor(red: Float, green: Float, blue: Float, alpha: Float) {
+        
+        print("Red:\(red) Green:\(green) Blue:\(blue) Alpha:\(alpha)")
+        
+        self.view?.presentMessage("カラーの保存に成功")
+    }
 }

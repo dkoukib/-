@@ -11,12 +11,16 @@ import Foundation
 protocol PickerViewInterface: class {
     
     var presenter: PickerPresentation! { get set }
+    
+    func presentMessage(_ message: String)
 }
 
 protocol PickerPresentation: class {
     
     var view: PickerViewInterface? { get set }
     var model: PickerInteractor! { get set }
+    
+    func willSaveColor(red: Float, green: Float, blue: Float, alpha: Float)
 }
 
 protocol PickerInteractor: class {

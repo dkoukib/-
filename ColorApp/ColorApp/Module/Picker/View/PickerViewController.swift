@@ -9,7 +9,7 @@
 import UIKit
 
 final class PickerViewController: UIViewController, PickerViewInterface {
-    
+
     var presenter: PickerPresentation!
     
     @IBOutlet private weak var colorView: UIView!
@@ -31,16 +31,22 @@ final class PickerViewController: UIViewController, PickerViewInterface {
         self.changeColorView()
     }
     
-    @IBAction private func didTapSaveButton(_ sender: Any) {
-        
-        
-    }
-    
     private func changeColorView() {
         let color = UIColor(red: CGFloat(self.redSlider.value/255),
                             green: CGFloat(self.greenSlider.value/255),
                             blue: CGFloat(self.blueSlider.value/255),
                             alpha: CGFloat(self.alphaSlider.value/100))
         self.colorView.backgroundColor = color
+    }
+    
+    @IBAction private func didTapSaveButton(_ sender: Any) {
+        self.presenter.willSaveColor(red: self.redSlider.value,
+                                     green: self.greenSlider.value,
+                                     blue: self.blueSlider.value,
+                                     alpha: self.alphaSlider.value)
+    }
+    
+    func presentMessage(_ message: String) {
+        self.showAlert(message: message)
     }
 }
