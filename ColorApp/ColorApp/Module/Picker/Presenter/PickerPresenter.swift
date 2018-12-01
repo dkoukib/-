@@ -23,3 +23,15 @@ final class PickerPresentor: PickerPresentation {
         self.view?.presentMessage("カラーの保存に成功")
     }
 }
+
+
+extension PickerPresentor: PickerInteractorOutput {
+    
+    func succeedSaveColor() {
+        self.view?.presentMessage("カラーの保存に成功")
+    }
+    
+    func failedSaveColor() {
+        self.view?.presentMessage("カラーの保存に失敗")
+    }
+}

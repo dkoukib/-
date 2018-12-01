@@ -12,12 +12,14 @@ final class UserDefaulManager {
     
     static private let colorDataArrayKey = "colorDataArray"
     
-    static func saveColorData(_ data: ColorData) {
+    static func saveColorData(_ data: ColorData) throws {
         var array = UserDefaults.standard.array(forKey: self.colorDataArrayKey) ?? []
         
-        if let encodeData = try? JSONEncoder().encode(data) {
+        do {
+            let encodeData = try JSONEncoder().encode(data)
             array.append(encodeData)
         }
+       
         
         UserDefaults.standard.set(array, forKey: colorDataArrayKey)
         UserDefaults.standard.synchronize()

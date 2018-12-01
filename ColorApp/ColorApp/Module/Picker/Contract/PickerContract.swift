@@ -24,5 +24,13 @@ protocol PickerPresentation: class {
 }
 
 protocol PickerInteractor: class {
+    
+    var output: PickerInteractorOutput? { get set }
+    
     func saveColor(_ data: ColorData)
+}
+
+protocol PickerInteractorOutput: class {
+    func succeedSaveColor()
+    func failedSaveColor()
 }

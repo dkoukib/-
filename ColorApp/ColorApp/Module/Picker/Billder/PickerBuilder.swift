@@ -20,6 +20,8 @@ final class PickerBuilder {
         presenter.view = view
         presenter.model = model
         
+        model.output = presenter
+        
         return view
     }
     
