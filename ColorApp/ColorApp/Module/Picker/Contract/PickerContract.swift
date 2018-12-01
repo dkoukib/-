@@ -24,5 +24,5 @@ protocol PickerPresentation: class {
 }
 
 protocol PickerInteractor: class {
-    
+    func saveColor(_ data: ColorData)
 }

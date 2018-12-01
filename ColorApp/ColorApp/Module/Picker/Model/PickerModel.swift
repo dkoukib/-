@@ -9,5 +9,7 @@
 import Foundation
 
 final class PickerModel: PickerInteractor {
-    
+    func saveColor(_ data: ColorData) {
+        UserDefaulManager.saveColorData(data)
+    }
 }

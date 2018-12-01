@@ -16,6 +16,8 @@ final class PickerPresentor: PickerPresentation {
     
     func willSaveColor(red: Float, green: Float, blue: Float, alpha: Float) {
         
+        let data = ColorData.init(red: red, green: green, blue: blue, alpha: alpha)
+        self.model.saveColor(data)
         print("Red:\(red) Green:\(green) Blue:\(blue) Alpha:\(alpha)")
         
         self.view?.presentMessage("カラーの保存に成功")
