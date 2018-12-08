@@ -9,7 +9,13 @@
 import UIKit
 
 class HistoryViewController: UIViewController {
-    @IBOutlet private weak var tableView: UITableView!
+    // テーブルビュー
+    @IBOutlet private weak var tableView: UITableView! {
+        willSet {
+            // レジスタに登録
+            newValue.register(HistoryCell.nib, forCellReuseIdentifier: HistoryCell.name)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +26,17 @@ class HistoryViewController: UIViewController {
 
 }
 
-
+// テーブルビューせ表示に必要なメソッド
 extension HistoryViewController: UITableViewDataSource {
+    // 表示するセルの数を返す
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
+    // 表示したいセルの取得
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: HistoryCell.name, for: indexPath) as! HistoryCell
+        return cell
     }
     
 }
