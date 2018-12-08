@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0449A40A21BC011E00B1D78B /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449A40921BC011E00B1D78B /* NSObject+.swift */; };
+		0449A40C21BC016600B1D78B /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449A40B21BC016600B1D78B /* UIView+.swift */; };
 		04F6C4F7217C86320039FA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C4F6217C86320039FA80 /* AppDelegate.swift */; };
 		04F6C4FE217C86340039FA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4FD217C86340039FA80 /* Assets.xcassets */; };
 		04F6C501217C86340039FA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C4FF217C86340039FA80 /* LaunchScreen.storyboard */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0449A40921BC011E00B1D78B /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		0449A40B21BC016600B1D78B /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		04F6C4F3217C86320039FA80 /* ColorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6C4F6217C86320039FA80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F6C4FD217C86340039FA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				17378E8F21A7DBF40099AA53 /* UIViewController+.swift */,
+				0449A40921BC011E00B1D78B /* NSObject+.swift */,
+				0449A40B21BC016600B1D78B /* UIView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -314,10 +320,12 @@
 				17DC45BD21BBED8F00C3413C /* HistoryViewController.swift in Sources */,
 				17DC45B721BBED2500C3413C /* HistoryContract.swift in Sources */,
 				17DC45B921BBED4100C3413C /* HistoryModel.swift in Sources */,
+				0449A40A21BC011E00B1D78B /* NSObject+.swift in Sources */,
 				178954D3217C8D8A00F3591B /* PickerModel.swift in Sources */,
 				17DC45C321BBF62F00C3413C /* HistoryCell.swift in Sources */,
 				17DC45BB21BBED6400C3413C /* HistoryPresenter.swift in Sources */,
 				04F6C4F7217C86320039FA80 /* AppDelegate.swift in Sources */,
+				0449A40C21BC016600B1D78B /* UIView+.swift in Sources */,
 				17DC45B521B2A0D600C3413C /* UserDefaultManager.swift in Sources */,
 				178954D5217C8DA200F3591B /* PickerPresenter.swift in Sources */,
 				178954D1217C8D6B00F3591B /* PickerContract.swift in Sources */,
