@@ -19,6 +19,13 @@
 		178954D9217C8E4900F3591B /* PickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178954D8217C8E4900F3591B /* PickerViewController.storyboard */; };
 		17DC45B221B29F6D00C3413C /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC45B121B29F6D00C3413C /* ColorData.swift */; };
 		17DC45B521B2A0D600C3413C /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC45B421B2A0D600C3413C /* UserDefaultManager.swift */; };
+		17DC45B721BBED2500C3413C /* HistoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC45B621BBED2500C3413C /* HistoryContract.swift */; };
+		17DC45B921BBED4100C3413C /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC45B821BBED4100C3413C /* HistoryModel.swift */; };
+		17DC45BB21BBED6400C3413C /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC45BA21BBED6400C3413C /* HistoryPresenter.swift */; };
+		17DC45BD21BBED8F00C3413C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC45BC21BBED8F00C3413C /* HistoryViewController.swift */; };
+		17DC45BF21BBEDB300C3413C /* HistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC45BE21BBEDB300C3413C /* HistoryViewController.storyboard */; };
+		17DC45C321BBF62F00C3413C /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC45C121BBF62F00C3413C /* HistoryCell.swift */; };
+		17DC45C421BBF62F00C3413C /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DC45C221BBF62F00C3413C /* HistoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		178954D8217C8E4900F3591B /* PickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
 		17DC45B121B29F6D00C3413C /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
 		17DC45B421B2A0D600C3413C /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		17DC45B621BBED2500C3413C /* HistoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContract.swift; sourceTree = "<group>"; };
+		17DC45B821BBED4100C3413C /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		17DC45BA21BBED6400C3413C /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		17DC45BC21BBED8F00C3413C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		17DC45BE21BBEDB300C3413C /* HistoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryViewController.storyboard; sourceTree = "<group>"; };
+		17DC45C121BBF62F00C3413C /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		17DC45C221BBF62F00C3413C /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +170,9 @@
 		178954CC217C8D0200F3591B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				17DC45BC21BBED8F00C3413C /* HistoryViewController.swift */,
+				17DC45C021BBF5E000C3413C /* Cell */,
+				17DC45BE21BBEDB300C3413C /* HistoryViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +180,7 @@
 		178954CD217C8D0900F3591B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				17DC45BA21BBED6400C3413C /* HistoryPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -170,6 +188,7 @@
 		178954CE217C8D1100F3591B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				17DC45B821BBED4100C3413C /* HistoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +196,7 @@
 		178954CF217C8D1C00F3591B /* Contract */ = {
 			isa = PBXGroup;
 			children = (
+				17DC45B621BBED2500C3413C /* HistoryContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -203,6 +223,15 @@
 				17DC45B421B2A0D600C3413C /* UserDefaultManager.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		17DC45C021BBF5E000C3413C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				17DC45C121BBF62F00C3413C /* HistoryCell.swift */,
+				17DC45C221BBF62F00C3413C /* HistoryCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +292,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DC45C421BBF62F00C3413C /* HistoryCell.xib in Resources */,
+				17DC45BF21BBEDB300C3413C /* HistoryViewController.storyboard in Resources */,
 				178954D9217C8E4900F3591B /* PickerViewController.storyboard in Resources */,
 				04F6C501217C86340039FA80 /* LaunchScreen.storyboard in Resources */,
 				04F6C4FE217C86340039FA80 /* Assets.xcassets in Resources */,
@@ -280,7 +311,12 @@
 				173403B021A7CB31003C2657 /* PickerBuilder.swift in Sources */,
 				178954D7217C8DD600F3591B /* PickerViewController.swift in Sources */,
 				17DC45B221B29F6D00C3413C /* ColorData.swift in Sources */,
+				17DC45BD21BBED8F00C3413C /* HistoryViewController.swift in Sources */,
+				17DC45B721BBED2500C3413C /* HistoryContract.swift in Sources */,
+				17DC45B921BBED4100C3413C /* HistoryModel.swift in Sources */,
 				178954D3217C8D8A00F3591B /* PickerModel.swift in Sources */,
+				17DC45C321BBF62F00C3413C /* HistoryCell.swift in Sources */,
+				17DC45BB21BBED6400C3413C /* HistoryPresenter.swift in Sources */,
 				04F6C4F7217C86320039FA80 /* AppDelegate.swift in Sources */,
 				17DC45B521B2A0D600C3413C /* UserDefaultManager.swift in Sources */,
 				178954D5217C8DA200F3591B /* PickerPresenter.swift in Sources */,
