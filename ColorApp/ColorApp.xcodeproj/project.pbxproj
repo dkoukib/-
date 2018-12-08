@@ -171,8 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				17DC45BC21BBED8F00C3413C /* HistoryViewController.swift */,
-				17DC45C021BBF5E000C3413C /* Cell */,
 				17DC45BE21BBEDB300C3413C /* HistoryViewController.storyboard */,
+				17DC45C021BBF5E000C3413C /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
